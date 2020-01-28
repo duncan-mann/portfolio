@@ -12,6 +12,7 @@
         <link rel="shortcut icon" href="{{ url_for('static', filename='basketball.ico') }}">
         <link rel="stylesheet" href="./static/index.css">
         <link href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 
     </head>
     <body>
@@ -31,9 +32,9 @@
                             <feBlend in2="goo" in="SourceGraphic" result="mix" />
                         </filter>
                         <linearGradient id="MyGradient">
-                                <stop offset="20%"  stop-color="rgb(255, 255, 255, 0.3)"/>
+                                <stop offset="20%"  stop-color="rgb(137, 170, 230)"/>
                                 <!-- <stop offset="40%" stop-color="#2055A1"/> -->
-                                <stop offset="100%" stop-color="#E8EBED"/>
+                                <stop offset="100%" stop-color="#AC80A0"/>
                         </linearGradient>
                     </defs>
                     <mask id="maska">
@@ -48,6 +49,39 @@
                     <rect mask="url(#maska)" fill="url(#MyGradient)" width="1000px" height="1000px">
                 </svg>	
             </div>
+
+            <div id="aboutMe">
+                <img src="./static/images/duncan.png"/>
+                <div class="paragraphs">
+                    <p>Hi, I'm Duncan. I'm a web developer with a degree in Mechanical Engineering.</p> 
+                    <p>As a new coder in the field, I enjoy learning new languages and frameworks to create aesthetic UIs. My favourite projects to date have used existing APIs to solve every day problems.</p>
+                    <p>In my free time I like to play drums, watch crime documetaries and think about going to the gym some day.</p>
+                </div>
+            </div>
+
+            <div>
+                <h4>Skills</h4>
+                <div class="skills">
+                    <ul>
+                        <li>languages</li>
+                        <li>javascript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>php</li>
+                        <li>python</li>
+                        <li>SQL</li>
+                    </ul>
+                    <ul>
+                        <li>frameworks/libraries</li>
+                        <li>React</li>
+                        <li>jQuery</li>
+                        <li>Express</li>
+                        <li>Codeigniter</li>
+                        <li>Flask</li>
+                    </ul>
+                </div>
+            </div>
+
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
             <script src="./static/index.js" type="text/javascript"></script>

@@ -6,21 +6,37 @@ body {
     background-image: linear-gradient(90deg, rgb(2, 19, 44), rgb(0, 0, 0));
     margin: 0;
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
   }
 
 .title {
     width: 60%;
     margin: 0 auto;
     align-content: center;
-    margin-top: 30%;
+    margin-top: 20%;
+    z-index: 100;
 }
 
 h1 {
     color: white;
     text-align: center;
-    Font-Family: 'Oswald', Sans-Serif;
-    Font-Size: 48px;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    Font-Size: 80px;
+
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+            animation: fadein 4s;
+}
+
+h4 {
+    color: white;
+}
+
+li {
+    color: white;
 }
 
 p {
@@ -28,17 +44,18 @@ p {
     color: white;
     Font-Family: 'Quattrocento', Serif;
     Font-Size: 16px;
+
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+            animation: fadein 4s;
 }
 
 .loading_cont {
     width: 100%;
     height: 100%;
     z-index: -1;
-    /* background: red; */
-    /* background: -webkit-linear-gradient(left top, #152a8e, #b1376c);
-    background: -o-linear-gradient(bottom right, #152a8e, #b1376c);
-    background: -moz-linear-gradient(bottom right, #152a8e, #b1376c);
-    background: linear-gradient(to bottom right, #152a8e, #b1376c); */
    }
    
    .loading_cont:before {
@@ -59,7 +76,8 @@ p {
        height: 100%;
        left: 50%;
        margin-left: -400px;
-       margin-top: -400px;
+       margin-top: -450px;
+       z-index: -1;
    }
    
    rect {
@@ -75,4 +93,56 @@ p {
    .blob {
        fill: white;
    }
-   
+
+   #aboutMe {
+       display: flex;
+       flex-direction: row;
+       margin: 0px 15%;
+       z-index: 1;
+   }
+
+   #aboutMe img {
+       height: 40vh;
+       -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+       filter: grayscale(100%);
+   }
+
+   .paragraphs {
+       display: flex;
+       flex-direction: column;
+       margin: auto 10%;
+   }
+
+   .skills {
+       display: flex;
+       flex-direction: row;
+   }
+
+   @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
